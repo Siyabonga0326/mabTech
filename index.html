@@ -24,6 +24,44 @@ http://www.templatemo.com/tm-486-new-event
 <!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
 
+
+
+<style>
+    /* Card hover effect */
+    #detail [style*="background-color: #ffffff"]:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,0.05) !important;
+        transition: box-shadow 0.3s ease;
+    }
+    
+    #detail a:hover {
+        color: #c0392b !important;
+    }
+    
+    #detail a:hover span {
+        transform: translateX(5px);
+        display: inline-block;
+        transition: transform 0.3s;
+    }
+    
+    /* Fix any template button styles that might interfere */
+    #detail .btn,
+    #detail .btn-default,
+    #detail .btn-lg {
+        display: none !important;
+    }
+    
+    /* Responsive */
+    @media (max-width: 767px) {
+        #detail [class*="col-"] {
+            width: 100%;
+        }
+        
+        #detail [style*="padding: 40px 25px"] {
+            padding: 30px 20px !important;
+        }
+    }
+</style>
+<!-- ***** Footer Area End ***** -->
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 
@@ -83,8 +121,8 @@ http://www.templatemo.com/tm-486-new-event
 			<div class="col-md-12 col-sm-12">
 				<h3 class="wow bounceIn" data-wow-delay="0.9s">July 22 - 26 in San Francisco, CA</h3>
 				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Web Design Conference</h1>
-				<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
-				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">REGISTER NOW</a>
+		 
+				<a href="#overview" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">Learn More</a>
 			</div>
 
 
@@ -93,39 +131,53 @@ http://www.templatemo.com/tm-486-new-event
 </section>
 
 <!-- =========================
-    DETAIL SECTION   
+    DETAIL SECTION - CARD STYLE
 ============================== -->
-<section id="detail" class="parallax-section">
-	<div class="container">
-		<div class="row">
-
-			<div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
-				<i class="fa fa-group"></i>
-				<h3>Datacentre Infrastructure And Management Services</h3>
-				<p>We encompass a comprehensive suite of solutions dessigned to optimize and oversee the critical components of data center operations</p>
-<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
-
-
-			</div>
-
-			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
-				<i class="fa fa-clock-o"></i>
-				<h3>Network Design, Implementation And Management Services</h3>
-				<p>We offer end-to-end solutions for organisations seeking to establish robust and efficient networking infrastructures and management services</p>
-			<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
-
-			</div>
-
-			<div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
-				<i class="fa fa-microphone"></i>
-				<h3>Other Information On Our Technologies Services</h3>
-				<p>From cybersecurity measures to ensure the protection of your data, to advanced cloud computing services that enhance operational efficiency</p>
-			<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
-
-			</div>
-
-		</div>
-	</div>
+<section id="detail" class="parallax-section" style="padding: 80px 0; background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px;">
+            
+            <!-- Card 1 -->
+            <div class="col-md-4 col-sm-4" style="padding: 0 15px; margin-bottom: 30px;">
+                <div style="background-color: #ffffff; border-radius: 0; padding: 40px 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); height: 100%; display: flex; flex-direction: column; border: 1px solid #f0f0f0;">
+                    <i class="fa fa-group" style="color: #e74c3c; font-size: 40px; margin-bottom: 25px;"></i>
+                    <h3 style="color: #0a0c0e; font-size: 20px; font-weight: 600; line-height: 1.3; margin-bottom: 20px; margin-top: 0; text-transform: none; letter-spacing: 0;">Datacentre Infrastructure And Management Services</h3>
+                    <p style="color: #6c757d; font-size: 15px; line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">We encompass a comprehensive suite of solutions designed to optimize and oversee the critical components of data center operations.</p>
+                    <a href="#overview" style="color: #e74c3c; font-size: 15px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: color 0.3s; text-transform: none; letter-spacing: 0; border: none; background: none; padding: 0;">
+                        Read More 
+                        <span style="margin-left: 5px; font-size: 18px;">→</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-md-4 col-sm-4" style="padding: 0 15px; margin-bottom: 30px;">
+                <div style="background-color: #ffffff; border-radius: 0; padding: 40px 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); height: 100%; display: flex; flex-direction: column; border: 1px solid #f0f0f0;">
+                    <i class="fa fa-clock-o" style="color: #e74c3c; font-size: 40px; margin-bottom: 25px;"></i>
+                    <h3 style="color: #0a0c0e; font-size: 20px; font-weight: 600; line-height: 1.3; margin-bottom: 20px; margin-top: 0; text-transform: none; letter-spacing: 0;">Network Design, Implementation And Management Services</h3>
+                    <p style="color: #6c757d; font-size: 15px; line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">We offer end-to-end solutions for organisations seeking to establish robust and efficient networking infrastructures and management services.</p>
+                    <a href="#overview" style="color: #e74c3c; font-size: 15px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: color 0.3s; text-transform: none; letter-spacing: 0; border: none; background: none; padding: 0;">
+                        Read More 
+                        <span style="margin-left: 5px; font-size: 18px;">→</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="col-md-4 col-sm-4" style="padding: 0 15px; margin-bottom: 30px;">
+                <div style="background-color: #ffffff; border-radius: 0; padding: 40px 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); height: 100%; display: flex; flex-direction: column; border: 1px solid #f0f0f0;">
+                    <i class="fa fa-microphone" style="color: #e74c3c; font-size: 40px; margin-bottom: 25px;"></i>
+                    <h3 style="color: #0a0c0e; font-size: 20px; font-weight: 600; line-height: 1.3; margin-bottom: 20px; margin-top: 0; text-transform: none; letter-spacing: 0;">Other Information On Our Technology Services</h3>
+                    <p style="color: #6c757d; font-size: 15px; line-height: 1.6; margin-bottom: 25px; flex-grow: 1;">From cybersecurity measures to ensure the protection of your data, to advanced cloud computing services that enhance operational efficiency.</p>
+                    <a href="#overview" style="color: #e74c3c; font-size: 15px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: color 0.3s; text-transform: none; letter-spacing: 0; border: none; background: none; padding: 0;">
+                        Read More 
+                        <span style="margin-left: 5px; font-size: 18px;">→</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </section>
 
 <!-- =========================
@@ -185,7 +237,7 @@ http://www.templatemo.com/tm-486-new-event
 
 			<div class="col-md-12 col-sm-12 wow bounceIn">
 				<div class="section-title">
-					<h2>Creative Speakers</h2>
+					<h2>Our Partners</h2>
 					<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
 				</div>
 			</div>
@@ -632,33 +684,168 @@ http://www.templatemo.com/tm-486-new-event
 	</div>
 </section>
 
-
-<!-- =========================
-    FOOTER SECTION   
-============================== -->
-<footer>
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
-				<p class="wow fadeInUp" data-wow-delay="0.6s">Copyright &copy; 2016 Your Company 
-                    
-                    | Design: <a rel="nofollow" href="http://www.templatemo.com/page/1" target="_parent">Templatemo</a></p>
-
-				<ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
-					<li><a href="#" class="fa fa-dribbble wow fadeInUp" data-wow-delay="1.6s"></a></li>
-					<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
-					<li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"></a></li>
-				</ul>
-
-			</div>
-			
-		</div>
-	</div>
+<!-- ***** Footer Area Start ***** -->
+<footer id="mab-footer" style="background-color: #0a0c0e; color: #ffffff; padding: 50px 0 30px; font-family: 'Poppins', Arial, sans-serif; border-top: none; margin-top: 0; clear: both; width: 100%;">
+    <div class="container" style="max-width: 1170px; margin: 0 auto; padding: 0 15px;">
+        
+        <!-- Main Footer Content Row -->
+        <div style="display: flex; flex-wrap: wrap; margin-bottom: 40px;">
+            
+            <!-- Column 1: Company Info (35%) -->
+            <div style="width: 35%; padding-right: 30px; box-sizing: border-box;">
+                <div style="margin-bottom: 20px;">
+                <img src="images/Technologies.png" alt="MAB Technologies" style="max-width: 120px; height: auto; margin-top: -5px;">
+                </div>
+                <p style="color: #aaaaaa; font-size: 13px; line-height: 1.7; margin-bottom: 30px; font-weight: 400;">
+                    "trading as" MAB Technologies is a level 1 BBBEE 100% owned company founded in 2011.
+                </p>
+                
+                <!-- Extra Info Links -->
+                <div style="margin-top: 10px;">
+                    <a href="#" style="color: #dddddd; text-decoration: none; font-size: 13px; margin-right: 25px; font-weight: 400; transition: color 0.3s;">Extra Info</a>
+                    <a href="#" style="color: #dddddd; text-decoration: none; font-size: 13px; margin-right: 25px; font-weight: 400; transition: color 0.3s;">Privacy Policy</a>
+                    <a href="#" style="color: #dddddd; text-decoration: none; font-size: 13px; font-weight: 400; transition: color 0.3s;">Terms & Conditions</a>
+                </div>
+            </div>
+            
+            <!-- Column 2: Contact Info (30%) -->
+            <div style="width: 30%; padding-right: 20px; box-sizing: border-box;">
+                <h3 style="color: #ffffff; font-size: 20px; font-weight: 600; margin-top: 0; margin-bottom: 30px; padding-bottom: 0; border-bottom: none; letter-spacing: 0.5px;">Contact Us</h3>
+                
+                <!-- Email Row -->
+                <div style="display: flex; margin-bottom: 25px;">
+                    <div style="color: #e74c3c; font-size: 15px; font-weight: 600; min-width: 70px; text-transform: uppercase; letter-spacing: 0.5px;">Email</div>
+                    <div style="color: #aaaaaa; font-size: 13px; line-height: 1.5;">info@mabetechnologies.co.za</div>
+                </div>
+                
+                <!-- Address Row -->
+                <div style="display: flex; margin-bottom: 25px;">
+                    <div style="color: #e74c3c; font-size: 15px; font-weight: 600; min-width: 70px; text-transform: uppercase; letter-spacing: 0.5px;">Address</div>
+                    <div style="color: #aaaaaa; font-size: 13px; line-height: 1.6;">
+                        19A Church Street,<br>Polokwane, Limpopo, 0700
+                    </div>
+                </div>
+                
+                <!-- Contact Info Row -->
+                <div style="display: flex;">
+                    <div style="color: #e74c3c; font-size: 15px; font-weight: 600; min-width: 70px; text-transform: uppercase; letter-spacing: 0.5px;">Contact Info</div>
+                    <div style="color: #aaaaaa; font-size: 13px;">
+                        <span style="display: block; margin-bottom: 8px; color: #aaaaaa;">Call us now</span>
+                        <span style="color: #ffffff; font-size: 22px; font-weight: 600; letter-spacing: 1px;">015 151 0640</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Column 3: Here to Listen & Social (35%) -->
+            <div style="width: 35%; padding-left: 30px; box-sizing: border-box; text-align: right;">
+                <h3 style="color: #ffffff; font-size: 26px; font-weight: 300; margin-top: 0; margin-bottom: 15px; padding-bottom: 0; border-bottom: none; line-height: 1.2;">We're here to listen</h3>
+                <p style="color: #aaaaaa; font-size: 14px; line-height: 1.6; margin-bottom: 30px; font-weight: 400;">
+                    Get in touch with an expert or find an office near you.
+                </p>
+                
+                <!-- Social Icons - Clean Square Style -->
+                <div style="display: flex; justify-content: flex-end; gap: 12px;">
+                    <a href="#" style="display: inline-block; width: 38px; height: 38px; background-color: #333333; color: #ffffff; text-align: center; line-height: 38px; font-size: 16px; transition: background-color 0.3s; text-decoration: none; border-radius: 2px;">f</a>
+                    <a href="#" style="display: inline-block; width: 38px; height: 38px; background-color: #333333; color: #ffffff; text-align: center; line-height: 38px; font-size: 16px; transition: background-color 0.3s; text-decoration: none; border-radius: 2px;">t</a>
+                    <a href="#" style="display: inline-block; width: 38px; height: 38px; background-color: #333333; color: #ffffff; text-align: center; line-height: 38px; font-size: 16px; transition: background-color 0.3s; text-decoration: none; border-radius: 2px;">d</a>
+                    <a href="#" style="display: inline-block; width: 38px; height: 38px; background-color: #333333; color: #ffffff; text-align: center; line-height: 38px; font-size: 16px; transition: background-color 0.3s; text-decoration: none; border-radius: 2px;">b</a>
+                    <a href="#" style="display: inline-block; width: 38px; height: 38px; background-color: #333333; color: #ffffff; text-align: center; line-height: 38px; font-size: 16px; transition: background-color 0.3s; text-decoration: none; border-radius: 2px;">g+</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright Bar - Simple Line -->
+        <div style="border-top: 1px solid #2a2a2a; padding-top: 25px; margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; color: #888888; font-size: 13px;">
+                <p style="margin: 0; padding: 0; color: #888888;">Copyright &copy; 2026 MAB Technologies. All rights reserved.</p>
+                <div style="display: flex; gap: 30px;">
+                    <a href="#" style="color: #888888; text-decoration: none; transition: color 0.3s; font-size: 13px;">Privacy Policy</a>
+                    <a href="#" style="color: #888888; text-decoration: none; transition: color 0.3s; font-size: 13px;">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
+<style>
+    /* Override any template styles that affect footer */
+    #mab-footer * {
+        box-sizing: border-box;
+    }
+    
+    #mab-footer h1, 
+    #mab-footer h2, 
+    #mab-footer h3, 
+    #mab-footer h4, 
+    #mab-footer h5, 
+    #mab-footer h6 {
+        margin-top: 0;
+        padding-top: 0;
+        border-bottom: none;
+    }
+    
+    #mab-footer a:hover {
+        color: #e74c3c !important;
+        text-decoration: none !important;
+    }
+    
+    #mab-footer .social-icon a:hover,
+    #mab-footer [style*="background-color: #333333"]:hover {
+        background-color: #e74c3c !important;
+        color: #ffffff !important;
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+        #mab-footer [style*="width: 35%"],
+        #mab-footer [style*="width: 30%"] {
+            width: 100% !important;
+            padding: 0 !important;
+            margin-bottom: 40px;
+            text-align: left !important;
+        }
+        
+        #mab-footer [style*="text-align: right"] {
+            text-align: left !important;
+        }
+        
+        #mab-footer [style*="justify-content: flex-end"] {
+            justify-content: flex-start !important;
+        }
+        
+        #mab-footer [style*="display: flex"]:not(.container) {
+            flex-direction: column;
+            align-items: flex-start !important;
+            gap: 15px;
+        }
+        
+        #mab-footer [style*="min-width: 70px"] {
+            margin-bottom: 5px;
+        }
+        
+        #mab-footer [style*="display: flex"]:has([style*="min-width: 70px"]) {
+            flex-direction: column;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #mab-footer [style*="justify-content: space-between"] {
+            flex-direction: column;
+            align-items: flex-start !important;
+            gap: 15px;
+        }
+        
+        #mab-footer [style*="gap: 30px"] {
+            gap: 20px !important;
+        }
+    }
+    
+    /* Remove any template footer styles */
+    footer:not(#mab-footer) {
+        display: none !important;
+    }
+</style>
+<!-- ***** Footer Area End ***** -->
 
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
